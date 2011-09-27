@@ -21,7 +21,7 @@
 
 .. None
      
-.. Authors              : Primal Pappachan and Satyajit Sarangi
+.. Authors             : Primal Pappachan
    Internal Reviewer   : Sushma
    External Reviewer   :
    Checklist OK?       : <put date stamp here, if OK> [2011-09-26]
@@ -58,11 +58,11 @@ The Principal Investigators of the project are
 
 .. L3
 
-{{{Show Slides on 'What do we do?'}}} 
+{{{Projects of FOSSEE}}} 
 
 .. R3
 
-We work on the following deliverables in the FOSSEE project.
+We work on the following projects in the FOSSEE.
 
 1. SEES
 
@@ -123,7 +123,12 @@ The initial plan is to take up a set of text books and have the (solved and unso
 
 This is how the project works. We have a bunch of textbooks, that we are targeting to code, in this iteration. Each book has a coordinator, who is in-charge of having the book coded in an Open Source language. He finds one or more students, who are willing to implement parts of the book and complete the book, roughly in the duration of one semester. The coordinator also finds a TA/reviewer, who will review the work done by the students and approve their work. The student then codes the problems from the book in the language that he chooses. The TA periodically reviews this work and helps him complete the task. The TA and student meet up in person, if and when required. Once the book is completed, the TA and the coordinator together, announce that the book is complete. This will then be reviewed by a member from FOSSEE and confirmed. Once, this work is announced as complete, all the participants get their goodies!
 
+If you wish to contribute as a Student, TA or Book Coordinator please visit http://fossee.in/pytask/accounts/register/
+ 
+
 .. L7
+
+{{Show the website in browser}}}
 
 {{{Show the 'Spoken Tutorials' slide}}} 
 

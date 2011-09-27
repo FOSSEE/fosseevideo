@@ -4,3 +4,6 @@
 *.snm
 *.out
 *.toc
+*.pdf
+*.bbl
+*.blg
