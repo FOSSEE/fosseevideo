@@ -91,16 +91,16 @@ The modules covered in this course are
 
 1. Using Linux Tools
 
-#. Basic Python Programming 
 
 #. LaTeX
 
 #. Version Control
 
-#. Test Driven Development
+#. Basic Python Programming 
 
 #. Advanced Python
 
+#. Test Driven Development
 .. L5
 
 {{{Show the 'Workshop' slide}}}
