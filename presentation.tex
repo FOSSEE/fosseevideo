@@ -1,121 +1,153 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Forked from Beamer Template by Bill Lampos
-%
-% Feel free to use (copy) the structure (latex formatting source code)
-% but not the content of this document.
-%
+% Beamer Presentation Template
 % Author: Primal Pappachan
-% Date: 2 - 10 - 2012
-% Images by : Satyajit Sarangi
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[compress,red]{beamer}
-\mode<presentation>
+% Last Updated: 4 - 10 - 2011
+% 
+
+\documentclass[compress,red]{beamer} %
 
 \usetheme{Warsaw}
 % other themes: AnnArbor, Antibes, Bergen, Berkeley, Berlin, Boadilla, boxes, CambridgeUS, Copenhagen, Darmstadt, default, Dresden, Frankfurt, Goettingen,
 % Hannover, Ilmenau, JuanLesPins, Luebeck, Madrid, Maloe, Marburg, Montpellier, PaloAlto, Pittsburg, Rochester, Singapore, Szeged, classic
 
-%\usecolortheme{lily}
+\usepackage[latin1]{inputenc}
+\usefonttheme{professionalfonts}
+\usepackage{times}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{verbatim}
+\usepackage{url}
+\usepackage{graphics}
+
+%\usecolortheme{default}
 % color themes: albatross, beaver, beetle, crane, default, dolphin, dov, fly, lily, orchid, rose, seagull, seahorse, sidebartab, structure, whale, wolverine
-
-%\usefonttheme{serif}
-% font themes: default, professionalfonts, serif, structurebold, structureitalicserif, structuresmallcapsserif
-
-% pdf is displayed in full screen mode automatically
-%\hypersetup{pdfpagemode=FullScreen}
-
-% define your own colours:
-\definecolor{Red}{rgb}{1,0,0}
-\definecolor{Blue}{rgb}{0,0,1}
-\definecolor{Green}{rgb}{0,1,0}
-\definecolor{magenta}{rgb}{1,0,.6}
-\definecolor{lightblue}{rgb}{0,.5,1}
-\definecolor{lightpurple}{rgb}{.6,.4,1}
-\definecolor{gold}{rgb}{.6,.5,0}
-\definecolor{orange}{rgb}{1,0.4,0}
-\definecolor{hotpink}{rgb}{1,0,0.5}
-\definecolor{newcolor2}{rgb}{.5,.3,.5}
-\definecolor{newcolor}{rgb}{0,.3,1}
-\definecolor{newcolor3}{rgb}{1,0,.35}
-\definecolor{darkgreen1}{rgb}{0, .35, 0}
-\definecolor{darkgreen}{rgb}{0, .6, 0}
-\definecolor{darkred}{rgb}{.75,0,0}
-
-\xdefinecolor{olive}{cmyk}{0.64,0,0.95,0.4}
-\xdefinecolor{purpleish}{cmyk}{0.75,0.75,0,0}
-
-% \usepackage{beamerinnertheme_______}
-% inner themes include circles, default, inmargin, rectangles, rounded
-
-%\usepackage{beamerouterthemesmoothbars}
-% outer themes include default, infolines, miniframes, shadow, sidebar, smoothbars, smoothtree, split, tree
 
 \useoutertheme[subsection=false]{smoothbars}
 
-% to have the same footer on all slides
-%\setbeamertemplate{footline}[text line]{xxx xxx xxx}
-%\setbeamertemplate{footline}[text line]{} % or empty footer
+\usefonttheme[onlysmall]{structurebold}
 
-% include packages
-\usepackage{subfigure}
-\usepackage{multicol}
-\usepackage{amsmath}
-\usepackage{epsfig}
-\usepackage{graphicx}
-\usepackage{graphics}
-\usepackage[all,knot]{xy}
-\xyoption{arc}
-\usepackage{url}
-\usepackage{multimedia}
-\usepackage{hyperref}
-\usepackage{setspace}
+% font themes: default, professionalfonts, serif, structurebold, structureitalicserif, structuresmallcapsserif
+
+\setbeamerfont{title}{shape=\itshape,family=\rmfamily}
+%\setbeamercolor{title}{fg=black!80!black,bg=red!90!white}
+
+\logo{} %\logo{\includegraphics[height=0.5cm]{logo.pdf}}
+%% Use \insertlogo to insert the logo at place
 
 \title{FOSSEE}
 \subtitle{Free and Open source Software for Science and Engineering
 Education}
-\author{}
+\author[]{}  %\author[Euclid]{Euclid of Alexandria
 \institute{IIT Bombay}
-\date{}
+\date[]{} %\date[ISPN ’80]{27th International Symposium of Prime Numbers}
+
 
 \begin{document}
 
-\frame{
-  \titlepage
-}
+\begin{frame}
+	 \titlepage
+\end{frame}
 
+\begin{frame}
+\section*{Outline}
+\end{frame}
 
+%Uncomment lines below to show table of contents at the beginning
+%%\section{Overview}
+%%\begin{frame}
+%%\tableofcontents
+%%\end{frame}
 
-\section{General overview of the project}
-\section[Outline]{}
-\frame{\tableofcontents}
+\section{Introduction}
+\begin{frame}
+\frametitle{FOSS}
+\begin{definition}
+\alert{FOSS} stands for Free and Open Source Software in Science and Engineering.
+\end{definition}
+\end{frame}
 
-\subsection{Projects}
-\frame{\frametitle{Projects}	
-\begin{center}
-{\centering {\includegraphics[scale=.14]{overview.png}}}
-\end{center}
-}
+\subsection{What users can do?}
+\begin{frame}
+\frametitle{What users can do?}
+\begin{example}
+\begin{itemize}
+\item See and modify the source code.\pause
+\item Redistribute and improve the source code.\pause
+\item Use the software for any purpose.\pause
+\end{itemize}
+\end{example}
+\end{frame}
+
+\subsection{For whom?}
+\begin{frame}
+\frametitle{FOSS is advantageous for}
+\begin{enumerate}
+\item Private Industries \pause
+\item Entrepreneurs \pause
+\item Defence Establishments \pause
+\item Research Organisations \pause
+\item Academic Institutions\pause
+\item Individual User \pause
+\end{enumerate}
+\begin{block}{FOSS for everyone}
+FOSS is good for anyone who uses Computer to get things done quickly and efficiently. 
+\end{block}
+\end{frame}
+
 
 \section{FOSSEE}
-\subsection{Introduction}
-\frame{\frametitle{FOSSEE}
-\begin{itemize}
-\item Goals: Minimize use of commercial tools in science/engineering curriculum \pause
-\item Documentation  \pause
-\item Awareness. \pause
-\end{itemize}
-\vspace{0.25cm}
-People:
-\begin{itemize}
-\item Prabhu Ramachandran (AE) \pause
-\item Mani Bhushan (ChE) \pause
-\item Madhu Belur (EE) \pause
-\item Kannan Moudgalya (ChE) \pause
-\end{itemize}
-}
 
-\subsection{Focus}
-\frame{\frametitle{FOSSEE focus in IITB}
+\subsection{FOSSEE at IITB}
+\begin{frame}
+\frametitle{FOSSEE}
+\begin{block}{Stands for}
+Free and Open source Software for Science and Engineering
+Education
+\end{block}
+\vspace{1cm}
+\begin{overlayarea}{\textwidth}{5cm}
+\only<1>{Based at IIT Bombay}
+\only<2>{Funded by MHRD}
+\only<3>{Part of National Mission on Education through
+ICT}
+\end{overlayarea}
+\end{frame}
+
+\subsection{Goals}
+\begin{frame}
+\frametitle{Goals}
+\begin{itemize}
+\item Promote \alert{FOSS} packages to minimize use of commercial tools in science and engineering education
+\item Documenation for supported \alert{FOSS} packages.
+\item Awareness among students and teachers about supported \alert{FOSS} packages. 
+\end{itemize}
+\end{frame}
+
+\subsection{People}
+\begin{frame}
+\frametitle{People}
+\begin{itemize}
+\item Prof. Prabhu Ramachandran \\ 
+{\footnotesize Aerospace Engineering} \pause
+\item Prof. Mani Bhushan \\
+{\footnotesize Chemical Engineering}  \pause
+\item Prof. Madhu Belur \\
+{\footnotesize Electrical Engineering} \pause
+\item Prof. Kannan Moudgalya \\
+{\footnotesize Chemical Engineering} \pause
+\end{itemize}
+\end{frame}
+
+\subsection{Block Diagram}
+\begin{frame}
+\frametitle{FOSSEE Projects}
+\begin{center}
+\includegraphics[scale=0.3]{blockdiagram.png}
+\end{center}
+\end{frame}
+
+\subsection{At IITB}
+\begin{frame}
+\frametitle{FOSSEE focus at IITB}
 \begin{itemize}
 \item Python family \pause
    \begin{itemize}
@@ -132,154 +164,97 @@ People:
 \item Other FOSS actively pursued/used \pause
    \begin{itemize}
    \item GNURadio
-   \item COMEDI
-   \item OpenFoam
-   \item NGSpice
+   \item KiCA
+   \item OpenFOAM
+   \item Ngspice
    \item \LaTeX % \Latex \Latex \pause
    \end{itemize}
 \end{itemize}
-}
+\end{frame}
 
-\subsection{Activities}
-\frame{\frametitle{Thrust Activities}
+\section{FOSSEE Activities}
+
+\subsection{Thrust Areas}
+\begin{frame}
+\frametitle{Thrust Activities}
 \begin{itemize}
-\item SDES course \pause
+\item SDES Course \pause
 \item Workshops  \pause
-\item Textbook companion  \pause
+\item Textbook Companion Project  \pause
 \item Spoken Tutorials \pause
 \end{itemize}
-}
+\end{frame}
 
-\frame{\frametitle{Development of the SDES semester-long course}
+\subsection{SDES}
+\begin{frame}
+\begin{block}{SDES}
+Software Development Techniques for Scientists and Engineers
+\end{block}
 \begin{itemize}
-\item Software Development Techniques for Engineers and Scientists (SDES) \pause
-\item Equips a student with various FOSS tools for curricular purposes. \pause
-\item For students of BE/BTech and ME/MTech programmes(Non CS/IT Streams) \pause
-\item Currently in curriculum : IIT Bombay, Varanasi and Chennai \pause
-\item \emph{1000 Teachers} Training for SDES through AVIEW in November 2011 \pause
+\item Equips a student with various FOSS tools for curricular purposes.
+\item For students of BE/BTech and ME/MTech programmes
+\item Currently in curriculum : IIT Bombay, Varanasi and Chennai
+\item Coordinators' workshop was held in September 2011.
 \end{itemize}
-}
+\end{frame}
 
-\frame{\frametitle{Co-ordinator's workshop}
+\begin{frame}
+\frametitle{Co-ordinator's Workshop}
 \begin{itemize}
-\item Introduce the advantages of FOSS to faculty of various engineering colleges \pause
+\item Introduce the faculty of various engineering colleges to advantages of FOSS. \pause
 \item Motivate them to include SDES course in their curriculum. \pause
 \item Conducted in 2 parts \pause
+\end{itemize}
 \begin{enumerate}
-\item Expert faculty from remote centers to a Coordinators training workshop \pause
-in IIT.
-\item At selected remote centers, lecture and live transmission takes place \pause
-through distance mode using AVIEW technology. \pause
+\item At IIT
+\item Through AVIEW \pause
 \end{enumerate}
-\end{itemize}
-}
+\begin{block}
+From all over India, over \alert{1000} Teacher's will be involved.
+\end{block}
+\end{frame}
 
-\frame{\frametitle{Spoken Tutorials}
-\begin{itemize}
-\item Create video tutorials on various modules of Python \pause
-\item Can be used for self learning and teaching purposes \pause
-\item To create video tutorials on various modules of Python \pause
-\item Completed 37 tutorials of scientific computing using python. \pause
-\item Videos can be downloaded from {\url{http://fossee.in/stvideos}} \pause
-\end{itemize}
-}
-
-
-\section{Scilab}
-
-\subsection{Why Scilab?}
-\frame{\frametitle{Why Scilab?}
-\begin{itemize}
-\item Free and open source, user friendly numerical and computational package.\pause
-\item Benefits of shifting to Scilab.\pause
-\item Immense Capabities. \pause
-\end{itemize}
-}
-
-\frame{\frametitle{What users can do?}
-\begin{itemize}
-\item See and modify the source code.\pause
-\item Redistribute and improve the source code.\pause
-\item Use the software for any purpose.\pause
-\end{itemize}
-This is an obvious advantage for Private Industries, Entrepreneurs, Defence Establishments, Research Organisations, Academic Institutions and Individual User. \pause
-}
-
-\subsection{Activities}
-\frame{\frametitle{Activities - 1}
-Some of the activities for promoting Scilab through NMEICT projects at IIT Bombay are \pause
-\begin{itemize}
-\item Lab Migration ( Shifting all computational laboratories to Scilab).\pause
-\item Virtual Labs ( Remote Access to the Single Board Heater System:\\{\color{magenta}http://www.co-learn.in/web-sbhs}
-\end{itemize}
-}
-
-
-\frame{\frametitle{Activities - 2}
-\begin{itemize}
-\item We have several spoken tutorial on Scilab at this time. \pause
-\item Scilab Effort in India is co-ordinated through this website.{\color{magenta}http://scilab.in} \pause
-\item There are some interesting projects one of them is the Textbook Companion project, that codes worked out examples of standard textbooks using Scilab. \pause
-\item The link project allows users to link known Scilab documents and to rank them. \pause
-\item We also help organize Scilab Workshops. \pause
-\item We have two mailing lists one for announce and another one for discuss.\pause
-\item We invite your participation in all our activities. \pause
-\end{itemize}
-}
-
-
-\section{Statistics}
 \subsection{Workshops}
-\frame{\frametitle{Workshops}
-{\bf \large Workshops : by FOSSEE-IITB}
+\begin{frame}
+\frametitle{Workshops all over India}
+%\includegraphics[scale=1]{workshop.png}
+\end{frame}
+
+\subsection{Spoken Tutorials}
+\begin{frame}
+\frametitle{Spoken Tutorials}
+\begin{columns}
+\column{.5\textwidth}
+\begin{block}{On}
 \begin{itemize}
-\item More than 40 workshops all over India : 30-50~participants \pause
-\item Locations:\\ \pause
-Durgapur, Haldia, Guwahati,  Suratkal, Hyderabad, \\
-Roorkee, Kanpur, Jaipur, Delhi, Pune, Nashik \\
-Cochin, Calicut, Kottayam, Bangalore, Manipal,
-Chennai, Erode, Coimbatore, Surat\\
-Nagpur, Mumbai, Latur, Nanded, Ramtek (near Nagpur), 
-\item Spoken tutorial based 
-\item Primarily \alert{targetting teachers} : 1 to 5 days \pause
-\item Online test portal for quick evaluation: clearing the
-online test \alert{compulsory} for participation certificate \pause
+\item Scilab
+\item Python - Basic and Advanced
+\item \LaTeX
+\item Version Control
+\item Linux utilities
 \end{itemize}
-(Note: We are not counting the 2-hour-workshops.)
-}
+\end{block}
+\column{.5\textwidth}
+\begin{block}{For}
+Self Learning and Teaching purposes.
+Over \alert{50} tutorials already completed.
+\end{block}
+\pause
+\end{columns}
+\begin{block}{Website}
+http://www.spoken-tutorial.org
+\end{block}
+\end{frame}
 
-\subsection{Achievements}
-\frame{\frametitle{Achievements}
-\small \bf
-{\bf so far (August 2011), till March 2012, till July 2012}
-% {\bf Deliverables} % please give milestones with timelines linking with payments
-\begin{center}
-\begin{table}[h]
-\begin{tabular}{|l|c|c|c|}
-\hline 
-Item & Aug '11 & Mar '12 & Jul '12 \tabularnewline
-& (achieved) & (expected) & (proposed) \tabularnewline
-\hline
-\hline 
-Workshops\footnote{\bf These are 1 to 5 days workshop targetted towards
-\alert{teachers}, and \alert{evaluated online} before issuing a participation
-certificate}  & 40 &  55 & 70\tabularnewline
-\hline 
-Conferences & 5 & 6 & 7 \tabularnewline
-\hline 
-Textbook Companions & 51 & 100 & 200 \tabularnewline
-\hline 
-Spoken Tutorials & 45 & 60 & 70 \tabularnewline
-\hline 
-Course conversion & 5 & 5 & 5\tabularnewline
-\hline
-Lab Migration & 4 & 10 & 20 \tabularnewline
-\hline
-\end{tabular}
-\end{table}
-\end{center}
 
-}
+\subsection{TextBook Companion Project}
+
+\begin{frame}
+\frametitle{TextBook Companion Project}
+\begin{description}
+Create a repository of reference material in the form of solved problems for Scientific Computing with Open Source tools.
+\end{description}
+\end{frame}
 
 
 \section*{}
